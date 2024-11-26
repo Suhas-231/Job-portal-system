@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='1.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="{{url_for ('home')}}"><i class="fas fa-home"></i> Home</a></li>
+            
+        </ul>
+    </nav>
+</header><pre>
+
+
+
+</pre>
+<body class="applicant-dashboard">
+    <section>
+    <h1>Applicant Dashboard</h1>
+    <form id="applicant-dashboard-form" method="POST" action="/applicant-dashboard">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone"><br>
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age"><br>
+        <label for="gender">Gender:</label><br>
+        <select name="gender" id="gender" required>
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+        <pre>
+            
+        </pre>
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address"><br>
+        <label for="qualifications">Qualifications:</label><br>
+        <input type="text" id="qualifications" name="qualifications"><br>
+        <label for="skills">Skills:</label><br>
+        <input type="text" id="skills" name="skills"><br>
+        <label for="studied_at">Studied At:</label><br>
+        <input type="text" id="studied_at" name="studied_at"><br>
+        <label for="branch">Branch:</label><br>
+        <input type="text" id="branch" name="branch"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="interested_domain">Interested Domain:</label><br>
+        <input type="text" id="interested_domain" name="interested_domain"><br>
+        <button type="submit">Save Details</button>
+    
+    </form>
+    <pre>
+
+
+    </pre>
+    <div id="job-postings"></div>
+    </section>
+    <script src="static/script.js"></script>
+</body>
+</html>
